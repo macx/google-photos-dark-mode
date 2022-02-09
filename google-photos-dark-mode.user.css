@@ -1,0 +1,95 @@
+/* ==UserStyle==
+@name         Google Photos Dark Mode
+@version      v0.1.0
+@namespace    github.com/macx
+@description  Dark Mode for Google Photos on Desktop
+@author       macx
+@license      MIT
+@homepageURL  https://github.com/macx/strava-dark-mode
+@supportURL   https://github.com/macx/strava-dark-mode/issues
+@updateURL    https://raw.githubusercontent.com/macx/strava-dark-mode/main/strava-dark-mode.user.css
+
+==/UserStyle== */
+
+@-moz-document domain("photos.google.com") {
+  /* photos.google.com*/
+
+  :root {
+    --clr-text: var(--lt-color-gray-100);
+    --clr-bg: var(--lt-color-gray-800);
+    --clr-bg--content: var(--lt-color-gray-700);
+    --clr-line: var(--lt-color-gray-700);
+    --clr-icon: var(--lt-color-gray-400);
+  }
+
+  body {
+    background-color: var(--clr-bg);
+    color: var(--clr-text);
+  }
+
+  /*
+  ┌──────────────────────────────────┐
+    HEADER
+  └──────────────────────────────────┘
+  */
+
+  .QtDoYb {
+    background-color: var(--clr-bg);
+  }
+
+  .xoqcGf .QtDoYb {
+    border-color: var(--clr-line);
+  }
+
+  /* Searchbox */
+
+  .Aul2T {
+    background-color: var(--clr-bg--content);
+  }
+
+  /*
+  ┌──────────────────────────────────┐
+    SIDEBAR
+  └──────────────────────────────────┘
+  */
+
+  .wDSX5e {
+    background-color: var(--clr-bg);
+  }
+
+  .ztTj8d {
+    background-color: var(--clr-line);
+  }
+
+  .G7ubtf {
+    color: var(--clr-text);
+  }
+
+  /*
+  ┌──────────────────────────────────┐
+    STAGE
+  └──────────────────────────────────┘
+  */
+
+  .yk5vcd,
+  .RLo1Hf,
+  .xA0gfb {
+    color: var(--clr-text);
+  }
+
+  /*
+  ┌──────────────────────────────────┐
+    ICONS
+  └──────────────────────────────────┘
+  */
+
+  .R4HkWb .orgUxc,
+  .gb_na svg,
+  .gb_Dc svg,
+  .gb_0c .gb_2d,
+  .gb_Pc .gb_2d,
+  .DOAbib .JUQOtc,
+  .G6iPcb .JUQOtc {
+    fill: var(--clr-icon);
+  }
+}
