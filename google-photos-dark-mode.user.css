@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google Photos Dark Mode
-@version      v0.1.0
+@version      v0.2.0
 @namespace    github.com/macx
 @description  Dark Mode for Google Photos on Desktop
 @author       macx
@@ -16,9 +16,12 @@
 
   :root {
     --clr-text: var(--lt-color-gray-100);
+    --clr-text--light: var(--lt-color-gray-500);
     --clr-bg: var(--lt-color-gray-800);
     --clr-bg--content: var(--lt-color-gray-700);
-    --clr-line: var(--lt-color-gray-700);
+    --clr-bg--modal: #202124;
+    --clr-bg--hover: rgba(255, 255, 255, 0.1);
+    --clr-line: rgba(255, 255, 255, 0.2);
     --clr-icon: var(--lt-color-gray-400);
   }
 
@@ -79,6 +82,129 @@
 
   /*
   ┌──────────────────────────────────┐
+    SINGLE IMAGE
+  └──────────────────────────────────┘
+  */
+
+  .Argd6e,
+  .Q77Pt,
+  .eGzquc,
+  .xfabfe {
+    background-color: var(--clr-bg);
+    color: var(--clr-text);
+  }
+
+  .WUbige {
+    color: inherit;
+  }
+
+  /* Main text */
+  .R9U8ab {
+    color: var(--clr-text);
+  }
+
+  /* Byline */
+  .oBMhZb,
+  .wiOkb,
+  .JzSi2b,
+  .lBpXKc,
+  .V29Vhb {
+    color: var(--clr-text--light);
+  }
+
+  /* ROWS */
+  .Kd04rd:hover {
+    background-color: var(--clr-bg--content);
+  }
+
+  /* Faces */
+  .Y8X4Pc {
+    color: var(--clr-text);
+  }
+
+  /* Form elements */
+  .qURWqc .ajQY2 {
+    background-color: var(--clr-bg);
+    border-color: var(--clr-line);
+  }
+
+  /*
+  ┌──────────────────────────────────┐
+    MENUS
+  └──────────────────────────────────┘
+  */
+
+  .JPdR6b {
+    background-color: var(--clr-bg--modal);
+    color: var(--clr-text);
+  }
+
+  /* Item */
+  .z80M1 {
+    color: var(--clr-text);
+  }
+
+  .z80M1:hover {
+    background: var(--clr-bg--hover);
+  }
+
+  /* Item Name */
+  .o7Osof .oJeWuf {
+    color: var(--clr-text);
+  }
+
+  /* Short Code */
+  .o7Osof .HhLEze {
+    color: var(--clr-text--light);
+  }
+
+  /*
+  ┌──────────────────────────────────┐
+    SHARE MODAL
+  └──────────────────────────────────┘
+  */
+
+  .g3VIld {
+    background-color: var(--clr-bg--modal);
+    color: var(--clr-text);
+  }
+
+  /* Reset background */
+
+  .Bofz6,
+  .ZjEvzc,
+  .KxwMuc,
+  .Rlk6vd,
+  .hUsHhf,
+  .IcLQae,
+  .BUzZed {
+    background-color: transparent;
+  }
+
+  .IBP7ye,
+  .swa7If {
+    background-color: var(--clr-line);
+  }
+
+  .ex6r4d,
+  .hPriQc,
+  .QeP71d,
+  .goTwYb {
+    color: var(--clr-text);
+  }
+
+  .H9eFkc,
+  .vB8bIb {
+    color: var(--clr-text--light);
+  }
+
+  /* Input */
+  .Ebw6d {
+    color: var(--clr-text);
+  }
+
+  /*
+  ┌──────────────────────────────────┐
     ICONS
   └──────────────────────────────────┘
   */
@@ -89,7 +215,12 @@
   .gb_0c .gb_2d,
   .gb_Pc .gb_2d,
   .DOAbib .JUQOtc,
-  .G6iPcb .JUQOtc {
+  .G6iPcb .JUQOtc,
+  .Y0p3Ue,
+  .F6wuZ,
+  .WAICmc.GHWQBd .F6wuZ,
+  .Kd04rd:hover .F6wuZ,
+  .nF9lHc {
     fill: var(--clr-icon);
   }
 }
