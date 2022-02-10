@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google Photos Dark Mode
-@version      v0.3.0
+@version      v1.0.0
 @namespace    github.com/macx
 @description  Dark Mode for Google Photos on Desktop
 @author       macx
@@ -19,15 +19,28 @@
     --clr-text--light: var(--lt-color-gray-500);
     --clr-bg: var(--lt-color-gray-800);
     --clr-bg--content: var(--lt-color-gray-700);
+    --clr-bg--dark: var(--lt-color-gray-900);
     --clr-bg--modal: #202124;
-    --clr-bg--hover: rgba(255, 255, 255, 0.1);
+    --clr-bg--hover: rgba(0, 0, 0, 0.2);
+    --clr-bg--active: rgba(26, 115, 232, 0.1);
+    --clr-bg--overlay: rgba(0, 0, 0, 0.8);
+    --clr-bg--search: rgba(0, 0, 0, 0.2);
     --clr-line: rgba(255, 255, 255, 0.2);
     --clr-icon: var(--lt-color-gray-400);
+    --clr-active: #1a73e8;
+
+    --shadow--modal: 0px 2px 3px 0px rgba(0, 0, 0, 0.5),
+      0px 6px 10px 4px rgba(0, 0, 0, 0.1);
   }
 
+  html,
   body {
     background-color: var(--clr-bg);
     color: var(--clr-text);
+  }
+
+  textarea {
+    background-color: transparent;
   }
 
   /*
@@ -36,18 +49,32 @@
   └──────────────────────────────────┘
   */
 
-  .QtDoYb {
+  .QtDoYb,
+  .KWdEHf.QtDoYb {
     background-color: var(--clr-bg);
   }
 
-  .xoqcGf .QtDoYb {
+  .maPcY.QtDoYb,
+  .NRbSyd.eO2Zfd {
+    box-shadow: var(--shadow--modal);
+  }
+
+  .xoqcGf .QtDoYb,
+  .cI2tlc .jBmls {
     border-color: var(--clr-line);
   }
 
-  /* Searchbox */
+  .xoqcGf.DKHcHb .Aul2T,
+  .Z8tmjf {
+    box-shadow: var(--shadow--modal);
+  }
 
-  .Aul2T {
-    background-color: var(--clr-bg--content);
+  .Z8tmjf {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .LAL5ie .ZAGvjd {
+    color: var(--clr-text);
   }
 
   /*
@@ -68,6 +95,21 @@
     color: var(--clr-text);
   }
 
+  /* Active item */
+  .wDSX5e .DOAbib:hover,
+  .wDSX5e .DOAbib.ixImeb:hover {
+    background-color: var(--clr-bg--hover);
+  }
+
+  .wDSX5e .ixImeb {
+    background-color: var(--clr-bg--active);
+  }
+
+  /* Progress Bar */
+  .Ud9NFb .DFG23b {
+    background-color: var(--clr-bg--dark);
+  }
+
   /*
   ┌──────────────────────────────────┐
     STAGE
@@ -76,8 +118,138 @@
 
   .yk5vcd,
   .RLo1Hf,
-  .xA0gfb {
+  .xA0gfb,
+  .hsohWb,
+  .dykGZb,
+  .avzd9e,
+  .ZEmz6b,
+  .NSzyed,
+  .I7yCae,
+  .ApP0z,
+  .Yyy4Hc,
+  .v8h7Rd,
+  .LjDxcd:not(:disabled) {
     color: var(--clr-text);
+  }
+
+  .QmUPuf,
+  .IY6Oqb,
+  .cigQ5,
+  .UmNiJe {
+    color: var(--clr-text--light);
+  }
+
+  /* Tile Background */
+  .p137Zd {
+    background-color: var(--clr-bg--dark);
+  }
+
+  .eReC4e,
+  .Cv8Rjc,
+  .dhgHyf {
+    background-color: transparent;
+  }
+
+  .OgirMe {
+    color: inherit;
+  }
+
+  .eReC4e.FbgB9,
+  .KQR9vc,
+  .DcsHOb,
+  .fq5X0 {
+    border-color: var(--clr-line);
+  }
+
+  /* Timeline */
+  .HrGXnb,
+  .KALWyc {
+    background-color: var(--clr-bg--modal);
+    color: var(--clr-text--light);
+  }
+
+  .Pk50Ic {
+    background-color: var(--clr-text--light);
+  }
+
+  .bButFf {
+    background-color: var(--clr-bg--modal);
+    color: var(--clr-text);
+  }
+
+  .oKubKe[aria-selected='true'] {
+    background-color: var(--clr-bg--hover);
+  }
+
+  /* Album Title */
+  .lDDKpd .ajQY2 {
+    background-color: transparent;
+    border-color: var(--clr-line);
+  }
+
+  /* Previous and Next Buttons */
+  .z0rmTb {
+    background-color: var(--clr-bg);
+    border-color: var(--clr-text);
+    box-shadow: var(--shadow--modal);
+  }
+
+  .z0rmTb:hover {
+    background-color: var(--clr-bg--overlay);
+  }
+
+  /*
+  ┌──────────────────────────────────┐
+    SEARCH AND COMMENT
+  └──────────────────────────────────┘
+  */
+
+  /* Overlay */
+  .vI9sif {
+    background-color: var(--clr-bg--overlay);
+    backdrop-filter: blur(5px);
+  }
+
+  .Aul2T,
+  .xoqcGf.DKHcHb .Aul2T {
+    background-color: var(--clr-bg--search);
+  }
+
+  .Nehgve,
+  .xFGsVc .Aul2T:not(.RDPZE) {
+    background-color: var(--clr-bg);
+  }
+
+  .xFGsVc .Aul2T:not(.RDPZE) {
+    box-shadow: var(--shadow--modal);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Active */
+  .VOEIyf .jBmls,
+  .Aul2T.qs41qe {
+    background-color: var(--clr-bg);
+  }
+
+  .Aul2T.qs41qe,
+  .cI2tlc .tWfTvb .jBmls {
+    box-shadow: var(--shadow--modal);
+  }
+
+  .obNJBf,
+  .obNJBf.wH28vf,
+  .ZLRk4e {
+    color: var(--clr-text);
+  }
+
+  .ZLRk4e::placeholder {
+    color: var(--clr-text--light);
+  }
+
+  .ggIr1e,
+  .l9dCke,
+  .OmFprf {
+    border-color: var(--clr-line);
   }
 
   /*
@@ -137,6 +309,7 @@
   .JPdR6b {
     background-color: var(--clr-bg--modal);
     color: var(--clr-text);
+    box-shadow: var(--shadow--modal);
   }
 
   /* Item */
@@ -156,6 +329,51 @@
   /* Short Code */
   .o7Osof .HhLEze {
     color: var(--clr-text--light);
+  }
+
+  /*
+  ┌──────────────────────────────────┐
+    CARDS
+  └──────────────────────────────────┘
+  */
+
+  .uIkos,
+  .CKdD8,
+  .FkWMmd,
+  .Ag1myf,
+  .INNc9c {
+    color: var(--clr-tex);
+  }
+
+  .ARSUIf,
+  .C96I0d,
+  .Cvr4mf,
+  .fGZ5Db {
+    color: var(--clr-text--light);
+  }
+
+  .Usd1Ac {
+    background-color: var(--clr-bg);
+  }
+
+  .bYS0Le .p102md {
+    background-color: var(--clr-bg--hover);
+  }
+
+  .lnQi4,
+  .Usd1Ac,
+  .nYXeLb.Y6cxZ,
+  .uORMl,
+  .wXMbxc,
+  .FGIAeb {
+    border-color: var(--clr-line);
+  }
+
+  .k92Qpc:not(.sMVRZe) .hRIVxb.u3bW4e > .ZFr60d,
+  .k92Qpc:not(.sMVRZe) .hRIVxb:hover > .ZFr60d,
+  .Rlk6vd.u3bW4e > .ZFr60d,
+  .Rlk6vd:hover > .ZFr60d {
+    background-color: var(--clr-bg--hover);
   }
 
   /*
@@ -189,7 +407,8 @@
   .ex6r4d,
   .hPriQc,
   .QeP71d,
-  .goTwYb {
+  .goTwYb,
+  .ZSB8G {
     color: var(--clr-text);
   }
 
@@ -220,7 +439,34 @@
   .F6wuZ,
   .WAICmc.GHWQBd .F6wuZ,
   .Kd04rd:hover .F6wuZ,
-  .nF9lHc {
+  .nF9lHc,
+  .U9bOZe .JUQOtc,
+  .C96I0d .JUQOtc,
+  .VxYl6 .JUQOtc,
+  .XzDmJe .JUQOtc,
+  .p7lsb .txMZRd .JUQOtc {
     fill: var(--clr-icon);
+  }
+
+  .v1262d {
+    fill: currentcolor;
+  }
+
+  .JRtysb,
+  .o7Osof .Ce1Y1c {
+    color: var(--clr-icon);
+  }
+
+  /* Social-Icons */
+  .zjlndc.XoBSNe .JUQOtc,
+  .zjlndc.KUwqec .JUQOtc {
+    fill: var(--clr-icon);
+  }
+
+  .ixImeb .JUQOtc,
+  .ixImeb .G7ubtf,
+  .ixImeb .OOX9bc {
+    color: var(--clr-active);
+    fill: var(--clr-active);
   }
 }
