@@ -3,9 +3,7 @@
 [![Install with Stylus](https://img.shields.io/badge/install%20with-stylus-2AFEFE)](https://raw.githubusercontent.com/macx/google-photos-dark-mode/main/google-photos-dark-mode.user.css)
 [![Version](https://img.shields.io/github/tag/macx/google-photos-dark-mode.svg?label=version)](https://github.com/macx/google-photos-dark-mode/tags)
 
-This is the Dark Mode for Google Photos on Desktop.
-
-Status Feb 2022: THIS IS WORK IN PROGRESS!
+Google Photos has a really nice Dark Mode in the Mobile App, but the Googlers have forgotten the Web App. This is my implementation of a Dark Mode for Desktops.
 
 ## Installation
 
@@ -14,11 +12,13 @@ Status Feb 2022: THIS IS WORK IN PROGRESS!
 
 ## How does this work?
 
-With a so-called user styles, you can override the styles from the origin page within your browser. You are a single click away, to apply the Focus Mode to your Facebook.
+With a so-called user styles, you can override the styles from the origin page within your browser. You are a single click away, to apply the Dark Mode to your Google Photos Web App.
+
+![Preview Google Photos Dark Mode](assets/images/gpdm-screen.webp 'Dark Theme of Google Photos')
 
 ## Features
 
-TBA
+Restyled everything, including search bards, settings, modals and cards.
 
 ## Contribute
 
