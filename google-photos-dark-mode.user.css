@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google Photos Dark Mode
-@version      v1.0.1
+@version      v1.0.2
 @namespace    github.com/macx
 @description  Dark Mode for Google Photos on Desktop
 @author       macx
@@ -79,7 +79,9 @@
     color: var(--clr-text);
   }
 
-  .ksBjEc:disabled {
+  .ksBjEc:disabled,
+  .mJ7Vpd .WNmljc,
+  .EIug8e {
     color: var(--clr-text--light);
   }
 
@@ -93,15 +95,28 @@
     background-color: var(--clr-bg);
   }
 
-  .ztTj8d {
+  .ztTj8d,
+  .VOEIyf .jBmls {
     background-color: var(--clr-line);
   }
 
-  .G7ubtf {
+  .bR0c0c {
+    background-color: var(--clr-bg--dark);
+  }
+
+  .G7ubtf,
+  .AJM7gb,
+  .yz06Ad,
+  .VOEIyf,
+  .VOEIyf .jBmls,
+  .oKubKe,
+  .yz06Ad.YXlojb > .ksmNxb {
     color: var(--clr-text);
   }
 
-  .bFJFBf {
+  .bFJFBf,
+  .yz06Ad.YXlojb,
+  .nAfFgf {
     color: var(--clr-text--light);
   }
 
@@ -152,13 +167,21 @@
   .fYwTV,
   .rN6Qmb,
   .P0eWkf,
-  .kKG0Qd {
+  .kKG0Qd,
+  .CZ5Sfb,
+  .PMy2Jc,
+  .LjDxcd:hover:not(:disabled) {
     color: var(--clr-text--light);
   }
 
   /* Tile Background */
   .p137Zd {
     background-color: var(--clr-bg--dark);
+  }
+
+  .MGxLdb,
+  .rtIMgb.WjVZdb {
+    background-color: var(--clr-bg--active);
   }
 
   .eReC4e,
@@ -215,6 +238,10 @@
 
   .z0rmTb:hover {
     background-color: var(--clr-bg--overlay);
+  }
+
+  .jvSPxc {
+    fill: currentColor;
   }
 
   /*
@@ -362,6 +389,10 @@
     color: var(--clr-text--light);
   }
 
+  .VfPpkd-YQoJzd {
+    border-color: var(--clr-icon);
+  }
+
   /*
   ┌──────────────────────────────────┐
     MENUS
@@ -445,7 +476,9 @@
   */
 
   .g3VIld,
-  .ncFHed {
+  .ncFHed,
+  .ddaf0 .qRUolc,
+  .faKKX {
     background-color: var(--clr-bg--modal);
     color: var(--clr-text);
   }
@@ -463,12 +496,26 @@
   }
 
   .IBP7ye,
-  .swa7If {
+  .swa7If,
+  .idZcaf {
     background-color: var(--clr-line);
   }
 
-  .GYIY8:after {
-    border-color: var(--clr-line);
+  .idZcaf {
+    height: 1px;
+  }
+
+  .GYIY8:after,
+  .Ne8lhe
+    .VfPpkd-muHVFf-bMcfAe:enabled:not(:checked):not(:indeterminate):not([data-indeterminate='true'])
+    ~ .VfPpkd-YQoJzd {
+    border-color: var(--clr-icon);
+  }
+
+  .Ne8lhe:hover
+    .VfPpkd-muHVFf-bMcfAe:enabled:not(:checked):not(:indeterminate):not([data-indeterminate='true'])
+    ~ .VfPpkd-YQoJzd {
+    border-color: var(--clr-text);
   }
 
   .ex6r4d,
@@ -479,8 +526,18 @@
   .JiDPLb,
   .q20Fs,
   .aAskqc,
-  .mU6X0b .tOrNgd {
+  .mU6X0b .tOrNgd,
+  .mMw6qe,
+  .lzh6Sb,
+  .NX2ljc,
+  .cW6cye,
+  .YCtJOe,
+  .VfPpkd-I9GLp-yrriRe {
     color: var(--clr-text);
+  }
+
+  .cW6cye {
+    line-height: 1.4;
   }
 
   .H9eFkc,
@@ -491,7 +548,11 @@
   .iOokGb,
   .pnqisc,
   .lcCric,
-  .s49Hac {
+  .s49Hac,
+  .nCP5yc:disabled,
+  .BnQsec,
+  .SSQXob,
+  .tqyzNb {
     color: var(--clr-text--light);
   }
 
@@ -500,7 +561,8 @@
     color: var(--clr-text);
   }
 
-  .ncFHed {
+  .ncFHed,
+  .fdzM1 {
     box-shadow: var(--shadow--modal);
   }
 
@@ -536,12 +598,9 @@
   .XzDmJe .JUQOtc,
   .fKz7Od,
   .p7lsb .txMZRd .JUQOtc,
+  .oFwkk,
   .V639qd.J9Nfi .X1clqd .JUQOtc {
     fill: var(--clr-icon);
-  }
-
-  .v1262d {
-    fill: currentcolor;
   }
 
   .JRtysb,
@@ -564,5 +623,11 @@
 
   .MSeqDf {
     border-color: var(--clr-line);
+  }
+
+  .uRZggd,
+  .niePN,
+  .IWg69d {
+    color: var(--clr-icon);
   }
 }
