@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google Photos Dark Mode
-@version      v1.0.2
+@version      v1.0.3
 @namespace    github.com/macx
 @description  Dark Mode for Google Photos on Desktop
 @author       macx
@@ -155,6 +155,7 @@
   .v8h7Rd,
   .rvEjke,
   .IGdgBf,
+  .mfQCMe,
   .eT2rxc,
   .LjDxcd:not(:disabled) {
     color: var(--clr-text);
@@ -170,12 +171,14 @@
   .kKG0Qd,
   .CZ5Sfb,
   .PMy2Jc,
+  .UV4Xae,
   .LjDxcd:hover:not(:disabled) {
     color: var(--clr-text--light);
   }
 
   /* Tile Background */
-  .p137Zd {
+  .p137Zd,
+  .FLmEnf {
     background-color: var(--clr-bg--dark);
   }
 
@@ -186,7 +189,8 @@
 
   .eReC4e,
   .Cv8Rjc,
-  .dhgHyf {
+  .dhgHyf,
+  .gN5aAe {
     background-color: transparent;
   }
 
