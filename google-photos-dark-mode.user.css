@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google Photos Dark Mode
-@version      v1.0.4
+@version      v1.0.5
 @namespace    github.com/macx
 @description  Dark Mode for Google Photos on Desktop
 @author       macx
@@ -61,7 +61,8 @@
   }
 
   .xoqcGf .QtDoYb,
-  .cI2tlc .jBmls {
+  .cI2tlc .jBmls,
+  .fXq1Rc .QtDoYb {
     border-color: var(--clr-line);
   }
 
@@ -81,7 +82,8 @@
 
   .ksBjEc:disabled,
   .mJ7Vpd .WNmljc,
-  .EIug8e {
+  .EIug8e,
+  .R8Z2bc .WNmljc {
     color: var(--clr-text--light);
   }
 
@@ -91,7 +93,8 @@
   └──────────────────────────────────┘
   */
 
-  .wDSX5e {
+  .wDSX5e,
+  .eejsDc {
     background-color: var(--clr-bg);
   }
 
@@ -110,20 +113,25 @@
   .VOEIyf,
   .VOEIyf .jBmls,
   .oKubKe,
-  .yz06Ad.YXlojb > .ksmNxb {
+  .yz06Ad.YXlojb > .ksmNxb,
+  .HksvWb {
     color: var(--clr-text);
   }
 
   .bFJFBf,
   .yz06Ad.YXlojb,
   .nAfFgf,
-  .apeEPd {
+  .apeEPd,
+  .RSjvib .ylKyWb,
+  .sXdtke {
     color: var(--clr-text--light);
   }
 
   /* Active item */
   .wDSX5e .DOAbib:hover,
-  .wDSX5e .DOAbib.ixImeb:hover {
+  .wDSX5e .DOAbib.ixImeb:hover,
+  .RSjvib .oUj9s:hover,
+  .RSjvib .uprWmb {
     background-color: var(--clr-bg--hover);
   }
 
@@ -608,12 +616,14 @@
   .p7lsb .txMZRd .JUQOtc,
   .oFwkk,
   .sUKWyb,
-  .V639qd.J9Nfi .X1clqd .JUQOtc {
+  .V639qd.J9Nfi .X1clqd .JUQOtc,
+  .oUj9s .JUQOtc {
     fill: var(--clr-icon);
   }
 
   .JRtysb,
-  .o7Osof .Ce1Y1c {
+  .o7Osof .Ce1Y1c,
+  .JBG7Xb {
     color: var(--clr-icon);
   }
 
