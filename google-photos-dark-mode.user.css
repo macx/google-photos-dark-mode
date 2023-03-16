@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Google Photos Dark Mode
-@version      v1.1.0
+@version      v1.1.1
 @namespace    github.com/macx
 @description  Dark Mode for Google Photos on Desktop
 @author       macx
@@ -26,8 +26,11 @@
     --clr-bg--overlay: rgba(0, 0, 0, 0.8);
     --clr-bg--search: rgba(0, 0, 0, 0.2);
     --clr-line: rgba(255, 255, 255, 0.2);
+		--clr-line--bright: rgba(255, 255, 255, .5);
     --clr-icon: #c2c9d6;
     --clr-active: #1a73e8;
+
+		--mdc-theme-text-primary-on-background: var(--clr-text),
 
     --shadow--modal: 0px 2px 3px 0px rgba(0, 0, 0, 0.5),
       0px 6px 10px 4px rgba(0, 0, 0, 0.1);
@@ -76,14 +79,15 @@
   }
 
   .LAL5ie .ZAGvjd,
-  .V639qd.J9Nfi .X1clqd {
+  .V639qd.J9Nfi .X1clqd,
+	.rxangc .ZhkbFb,
+	.EIug8e {
     color: var(--clr-text);
   }
 
   .ksBjEc:disabled,
   .mJ7Vpd .WNmljc,
-  .EIug8e,
-  .R8Z2bc .WNmljc {
+  .EIug8e, {
     color: var(--clr-text--light);
   }
 
@@ -99,7 +103,8 @@
   }
 
   .ztTj8d,
-  .VOEIyf .jBmls {
+  .VOEIyf .jBmls,
+	.lJ21id {
     background-color: var(--clr-line);
   }
 
@@ -141,6 +146,11 @@
   }
 
   /* Progress Bar */
+
+	.Ud9NFb {
+		border: 1px solid var(--clr-line);
+	}
+
   .Ud9NFb .DFG23b {
     background-color: var(--clr-bg--dark);
   }
@@ -168,7 +178,8 @@
   .mfQCMe,
   .eT2rxc,
   .LjDxcd:not(:disabled),
-  .weSwo {
+  .weSwo,
+	.I7yCae.auswjd {
     color: var(--clr-text);
   }
 
@@ -184,13 +195,15 @@
   .PMy2Jc,
   .UV4Xae,
   .LjDxcd:hover:not(:disabled),
-  .uqcjDb {
+  .uqcjDb,
+	.wbWIOb {
     color: var(--clr-text--light);
   }
 
   /* Tile Background */
   .p137Zd,
-  .FLmEnf {
+  .FLmEnf,
+	.yhB1zd {
     background-color: var(--clr-bg--dark);
   }
 
@@ -199,11 +212,11 @@
     background-color: var(--clr-bg--active);
   }
 
-  .eReC4e,
   .Cv8Rjc,
   .dhgHyf,
-  .gN5aAe {
-    background-color: transparent;
+  .gN5aAe,
+	.eReC4e {
+    background-color: var(--clr-bg--dark)
   }
 
   .OgirMe {
@@ -217,6 +230,10 @@
   .X0f2Ie,
   .Rj2Mlf:not(:disabled) {
     border-color: var(--clr-line);
+  }
+
+	.yhB1zd {
+	  border-color: var(--clr-line--bright);
   }
 
   /* Timeline */
@@ -252,6 +269,10 @@
     border-color: var(--clr-text);
     box-shadow: var(--shadow--modal);
   }
+
+	.O9S9Be {
+		background-color: var(--clr-bg--overlay);
+	}
 
   .z0rmTb:hover {
     background-color: var(--clr-bg--overlay);
@@ -501,7 +522,10 @@
   .g3VIld,
   .ncFHed,
   .ddaf0 .qRUolc,
-  .faKKX {
+  .faKKX,
+	.gtu6be .tOrNgd,
+	.W6ZbFb .tOrNgd,
+	.YmYVQb {
     background-color: var(--clr-bg--modal);
     color: var(--clr-text);
   }
@@ -514,7 +538,8 @@
   .hUsHhf,
   .IcLQae,
   .BUzZed,
-  .mU6X0b .tOrNgd {
+  .mU6X0b .tOrNgd,
+	.lxVDVb {
     background-color: transparent;
   }
 
@@ -578,7 +603,9 @@
   .SSQXob,
   .x5gnMb,
   .vVyGvc,
-  .tqyzNb {
+  .tqyzNb,
+	.uB1Z7b,
+	.qLte5e {
     color: var(--clr-text--light);
   }
 
@@ -627,7 +654,11 @@
   .oFwkk,
   .sUKWyb,
   .V639qd.J9Nfi .X1clqd .JUQOtc,
-  .oUj9s .JUQOtc {
+  .oUj9s .JUQOtc,
+	.gb_Fa svg,
+	.ApP0z .JUQOtc,
+	.xWvYEb,
+	.qLHM7b {
     fill: var(--clr-icon);
   }
 
